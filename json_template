@@ -1,0 +1,17 @@
+{sys:"ZEBRABET",
+env:"TEST", 
+org:"zabbix"
+v:"4.0"
+domain:"App:Module"
+loc.host:"{HOST.NAME1}"
+loc.inst:"{HOST.NAME1}"
+time:"{EVENT.DATE}T{EVENT.TIME}"  
+alarm.name:"{TRIGGER.NAME}"
+alarm.state:"{TRIGGER.SEVERITY}"
+url:"{TRIGGER.URL}"
+msg:[
+[{ITEM.NAME1}, {HOST.NAME1}, {ITEM.KEY1}, {ITEM.VALUE1}],
+[{
+2. {ITEM.NAME2} ({HOST.NAME2}:{ITEM.KEY2}): {ITEM.VALUE2}
+3. {ITEM.NAME3} ({HOST.NAME3}:{ITEM.KEY3}): {ITEM.VALUE3}
+Original event ID: {EVENT.ID}"
